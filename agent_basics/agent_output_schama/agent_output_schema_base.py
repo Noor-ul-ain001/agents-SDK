@@ -55,7 +55,7 @@ agent: Agent = Agent(
         "email_body (string), and email_date (integer for the day of the month). "
         "If user_email is missing, fill it with 'unknown@example.com'."
     ),
-    output_type=Output,
+    output_type=Output_schema,
     model=model
 )
 
@@ -66,6 +66,7 @@ res = Runner.run_sync(
 )
 
 print(res.final_output)
+
 
 
 
